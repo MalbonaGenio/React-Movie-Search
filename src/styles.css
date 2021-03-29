@@ -33,3 +33,52 @@ small {
   max-width: 1000px;
   padding: 40px;
 }
+
+.form {
+  display: grid;
+}
+
+.label {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
+.input {
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  line-height: 2.8rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  transform: background-color 250ms;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* MEDIA QUERRIES */
+
+@media (min-width: 780px) {
+  .form {
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1rem;
+    align-items: center;
+  }
+  /* takes out the margin so 
+  everything is lined up in big screens */
+  .input {
+    margin-bottom: 0;
+  }
+}
