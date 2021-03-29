@@ -1,9 +1,11 @@
-import "./styles.css";
+import "./styles.css"
+import SearchMovies from "./SearchMovies.js"
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello world</h1>
+    <div className="container">
+      <h1 className="title">React Movie Search</h1>
+      <SearchMovies />
     </div>
-  );
+  )
 }
